@@ -1,7 +1,4 @@
-# BAZNI KOSTUR ZA OCJENSKU VJEŽBU
 
-# 1. DEFINICIJA "RADNIKA" (Funkcija)
-#čista funkcija za izračun prosjeka
 def izracunaj_prosjek(lista_brojeva):
     """
     Ova funkcija je "Radnik". Treba primiti listu i vratiti prosjek.
@@ -16,10 +13,10 @@ def izracunaj_prosjek(lista_brojeva):
 
     prosjek = suma / len(lista_brojeva)
     return prosjek
-    # **MJESTO ZA IMPLEMENTACIJU LOGIKE FUNKCIJE**
-    return 0 # Trenutno vraća 0 kao placeholder
 
-# 2. DEFINICIJA "KOSTURA" ("ŠEF" - Glavna petlja)
+    return 0 
+
+
 lista_mjerenja = []
 
 while True:
@@ -37,7 +34,6 @@ while True:
         print("Greška: Unos mora biti broj (0-3).")
         continue
 
-    # --- Logika "Šefa" ---
     if opcija == 1:
         try:
             vrijednost = float(input("Unesi vrijednost mjerenja (V): "))
@@ -63,4 +59,5 @@ while True:
         break
     
     else:
+
         print("Nepostojeća opcija. Pokušaj ponovno.")
